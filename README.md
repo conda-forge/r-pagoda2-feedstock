@@ -3,6 +3,7 @@ About r-pagoda2-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-pagoda2-feedstock/blob/main/LICENSE.txt)
 
+
 About r-pagoda2
 ---------------
 
@@ -11,6 +12,7 @@ Home: https://github.com/kharchenkolab/pagoda2
 Package license: GPL-3.0-only
 
 Summary: Analyzing and interactively exploring large-scale single-cell RNA-seq datasets. 'pagoda2' primarily performs normalization and differential gene expression analysis, with an interactive application for exploring single-cell RNA-seq datasets. It performs basic tasks such as cell size normalization, gene variance normalization, and can be used to identify subpopulations and run differential expression within individual samples. 'pagoda2' was written to rapidly process modern large-scale scRNAseq datasets of approximately 1e6 cells. The companion web application allows users to explore which gene expression patterns form the different subpopulations within your data. The package also serves as the primary method for preprocessing data for conos, <https://github.com/kharchenkolab/conos>. This package interacts with data available through the 'p2data' package, which is available in a 'drat' repository. To access this data package, see the instructions at <https://github.com/kharchenkolab/pagoda2>. The size of the 'p2data' package is approximately 6 MB.
+
 About r-pagoda2
 ---------------
 
