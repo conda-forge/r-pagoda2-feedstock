@@ -1,4 +1,4 @@
-{% set version = "1.0.11" %}
+{% set version = "1.0.12" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/pagoda2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pagoda2/pagoda2_{{ version }}.tar.gz
-  sha256: c17bb5a0f59d23a87e745fc74df594118b0a915ab0b0205239c9b4cde0a1a28f
+  sha256: 5cbb6204186fc13067b07d212f7b6f61e711a5840f69097bd6dc8a12b30893cd
 
 build:
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -21,7 +21,9 @@ requirements:
   build:
     - {{ compiler('c') }}              # [not win]
     - {{ stdlib("c") }}                # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ stdlib("m2w64_c") }}          # [win]
     - {{ compiler('cxx') }}            # [not win]
     - {{ compiler('m2w64_cxx') }}      # [win]
