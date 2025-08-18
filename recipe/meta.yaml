@@ -1,4 +1,4 @@
-{% set version = "1.0.12" %}
+{% set version = "1.0.13" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/pagoda2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/pagoda2/pagoda2_{{ version }}.tar.gz
-  sha256: 5cbb6204186fc13067b07d212f7b6f61e711a5840f69097bd6dc8a12b30893cd
+  sha256: cf9523409ac0bb8975d4abfa290e9acee788d4df720b58b4c0999e88f0e7a530
 
 build:
   number: 0
